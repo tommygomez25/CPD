@@ -1,0 +1,8 @@
+
+Lines: 600, Cols: 600, Block size:1, Time:0,155
+Lines: 1000, Cols: 1000, Block size:1, Time:0,735
+Lines: 1400, Cols: 1400, Block size:1, Time:2,150
+Lines: 1800, Cols: 1800, Block size:1, Time:4,745
+Lines: 2200, Cols: 2200, Block size:1, Time:8,936
+Lines: 2600, Cols: 2600, Block size:1, Time:14,012
+Lines: 3000, Cols: 3000, Block size:1, Time:21,934

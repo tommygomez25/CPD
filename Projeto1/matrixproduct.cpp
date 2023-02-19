@@ -12,13 +12,13 @@ using namespace std;
 
 
 void write_result(int lin, int col, int blockSize, const char*time, const char *filename) {
-    FILE *fp = fopen(filename,"w");
+    FILE *fp = fopen(filename,"a");
     if (fp == NULL) {
         fprintf(stderr, "Error: Failed to open file '%s'\n",filename);
         return;
     }
 
-    fprintf(fp,"Lines: %d, Cols: %d, Block Size: %d, %s",lin,col,blockSize,time);
+    fprintf(fp,"\nLines: %d, Cols: %d, Block Size: %d, %s",lin,col,blockSize,time);
     fclose(fp);
 }
 
@@ -135,7 +135,7 @@ void OnMultLine(int m_ar, int m_br)
 	sprintf(st, "Time: %3.3f ", (double)(Time2 - Time1) / CLOCKS_PER_SEC);
 	cout << st;
 
-    write_result(m_ar,m_br,1,st,"2_results.txt");
+    write_result(m_ar,m_br,1,st,"2_results_c.txt");
 
     // display 10 elements of the result matrix tto verify correctness
 	cout << "Result matrix: " << endl;
